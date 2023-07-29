@@ -228,7 +228,7 @@ For the term $\sum_j log(\frac{p(z_j)}{q(z_j)})$ we have (which is estimation of
   - Note: We sum over all independent random variables $z_{j,k}$ over random vector $z_j$.
 
 At the end we have:
-- $\sum_k \frac{1}{2} \cdot (1 + log(g_{e,k}(x_i)) - (g_{e,k}(x_i))^2 - {f_{e,k}(x_i)}^2) - \sum_j \frac{1}{2\cdot c}\cdot ||x_i - f_d(z_j)||^{2}_{2}$
+- $\sum_k \frac{1}{2} \cdot (1 + log((g_{e,k}(x_i))^2) - (g_{e,k}(x_i))^2 - {f_{e,k}(x_i)}^2) - \sum_j \frac{1}{2\cdot c}\cdot ||x_i - f_d(z_j)||^{2}_{2}$
 - We want to maximize this term. We can also minimize the negative value.
 - When using minibatch stochastic gradient descent, we can average the loss over all $x_i$ data samples.
 - Also, when using minibatches, it is common to draw a single sample from the $q(z)$ distribution for each element in the minibatch.
